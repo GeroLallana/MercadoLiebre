@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+body {
+    font-family: "roboto";
+    font-size: 12px;
+    background-color: #EBEBEB;
+    margin: 0px;
+}
+/*Header*/
+header{
+    background-color: #EAC926;
+    margin: 0px;
+    
+}
+.cuotas{
+    text-align: center;
+}
+.logo-barra{
+    display: flex;
+    align-items: center;
+}
+.logo-mercado-liebre{
+    width: 50%;
+    margin: 10px;
+}
+.barra{
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.imagen-home{
+    margin-bottom: 0px;
+    background-color: #EBEBEB;
+}
+.burger-menu{
+    width: 35px;
+    height: 33px;
+    background-color:#03264C; ;
+    font-size: 25px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.visit-ofert{
+    font-size: 24px;
+}
+.main-navbar {
+    margin-top: 20px;
+    display: none;
+  }
+  
+ 
+  .left-navbar a,
+  .right-navbar a {
+    display: block;
+    padding: 5px 0;
+    border-bottom: solid 1px var(--gray);
+   
+  }
+  
+/*Articulos*/
+.contenedor-articulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.articulos{
+    margin: 10px;
+    background-color: white;
+    display: block;
+    box-sizing: border-box;
+}
+.imagen-producto{
+    border-bottom: #EBEBEB solid 1px;
+}
+.truck{
+    border-top: #EBEBEB solid 2px;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39B54A;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    color: green;
+}
+.truck:hover{
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+.price{
+    font-size: 18px;
+    margin: 5px;
+    text-align: left;
+    display: block;
+    width: 30%;
+}
+.discount{
+    font-size: 16px;
+    margin: 5px;
+    text-align: left;
+    color: green;
+    display: block;
+    width: 70%;
+}
+.description{
+    font-size: 16px;
+    color: #666;
+    text-align: left;
+    display: none;
+}
+.price-discount{
+    display: flex;
+}
+.main-section{
+    text-align: center;
+    margin: 25px;
+    flex-wrap: wrap;
+   
+   
+}
+/*Footer*/
+.contenedor-footer{
+text-align: center;
+}
+.h4-footer{
+    font-size: 15px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+}
+.p-footer{
+    margin-top: 2px;
+    margin-bottom: 25px;
+}
+.icono-footer{
+    font-size: 2em;
+    color: rgb(32, 116, 243);
+    margin-bottom: 10px;
+}
+@media(min-width: 361px){
+    .articulos{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .burger-menu{
+        display: none;
+    }
+    .contenedor-footer{
+        display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    }
+    .articulos:hover .description{
+        display: block;
+        transform: none;
+        transition: all 0.5s;
+    }
+    
+    .main-navbar,
+    .left-navbar,
+    .right-navbar {
+    display: flex;
+    flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+  
+    .left-navbar a,
+    .right-navbar a {
+      border-bottom: none;
+    }
+  
+    .left-navbar a:hover,
+    .right-navbar a:hover {
+      color: var(--light-blue);
+    }
+  
+    .left-navbar li {
+      margin-right: 15px;
+    }
+  
+    .right-navbar li {
+      margin-left: 15px;
+    }
+  
+   
+        }
+@media(min-width: 769px){
+    .main-section{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100)
+    }
+}

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+html{ background-color: #EBEBEB;}
+
+/*Header*/
+header{
+    background-color: #EAC926;
+    margin: 0px;
+    
+}
+.cuotas{
+    text-align: center;
+}
+.logo-barra{
+    display: flex;
+    align-items: center;
+}
+.logo-mercado-liebre{
+    width: 50%;
+    margin: 10px;
+}
+.barra{
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.imagen-home{
+    margin-bottom: 0px;
+    background-color: #EBEBEB;
+}
+.burger-menu{
+    width: 35px;
+    height: 33px;
+    background-color:#03264C; ;
+    font-size: 25px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.visit-ofert{
+    font-size: 24px;
+}
+.item-list{
+    display: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+   
+    
+}
+
+.Main{
+    top: 150px;
+    
+}
+
+
+.Main-Form-Registro{
+    padding: 0px;
+    margin: auto;
+    width: 55vw;
+    border:none;
+   
+    
+}
+
+.Form-Registro{ 
+    margin: auto;
+    padding: 55px;
+    width: 45vw;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 30px;
+    justify-content: center;
+
+}
+
+.Form-Registro-Campos .Datos-Input-Grupo input{
+    width: 15vw;
+    height: 3vh;
+    padding: 5px;
+    margin-top: 6%;
+    margin-left: 8%;
+    border:solid 2px;
+    border-color: #666;
+    border-radius: 5px;
+}
+
+
+
+.Form-Registro-Campos .Botones-Form-Grupo button{
+    margin-top: 1.2%;
+    margin-left: 8%;  
+    width: 14vw;
+    height: 8vh;
+    border-radius:  8px;
+    border-color: #666;
+    
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: #202020;
+    font-size: 1.5vw;
+    text-align: center;
+    box-sizing: border-box;
+} 
+
+.Botones-Form-Grupo button:hover{
+    background-color: rgb(32, 116, 243);
+    transition: 0.5s;
+}
+
+
+/*Footer*/
+
+
+
+.contenedor-footer{
+    text-align: center;
+    }
+    .h4-footer{
+        font-size: 15px;
+        margin-bottom: 1px;
+        margin-top: 10px;
+    }
+    .p-footer{
+        margin-top: 2px;
+        margin-bottom: 25px;
+    }
+    .icono-footer{
+        font-size: 2em;
+        color: rgb(32, 116, 243);
+        margin-bottom: 10px;
+    }
+
+@media(min-width: 361px){
+    
+    .burger-menu{
+        display: none;
+    }
+    .contenedor-footer{
+        display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    }
+   
+    .item-list{
+        display: block;
+        margin: 15px;
+    }
+    .item-list li{
+        display: inline-block;
+        justify-content: space-around;
+        padding: 10px;
+    }
+}
